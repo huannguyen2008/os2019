@@ -1,0 +1,44 @@
+- echo hello world
+hello world
+- passwd
+Changing password for huannguyen2008.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+- date
+Mon Apr  1 11:12:12 +07 2019
+- hostname
+huannguyen2008-HP-ENVY-Laptop-13-ah0xxx
+- arch
+x86_64
+- uname -a
+Linux huannguyen2008-HP-ENVY-Laptop-13-ah0xxx 4.18.0-16-generic #17~18.04.1-Ubuntu SMP Tue Feb 12 13:35:51 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+- dmesg
+[   67.409707] audit: type=1400 audit(1554089421.060:252): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/core/6350/usr/lib/snapd/snap-confine" pid=3777 comm="apparmor_parser"
+[   67.409709] audit: type=1400 audit(1554089421.060:253): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/core/6350/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=3777 comm="apparmor_parser"
+[   67.412170] audit: type=1400 audit(1554089421.064:254): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.core" pid=3779 comm="apparmor_parser"
+[   67.412894] audit: type=1400 audit(1554089421.064:255): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.core.hook.configure" pid=3780 comm="apparmor_parser"
+[   67.830671] audit: type=1400 audit(1554089421.480:256): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.gnome-system-monitor.gnome-system-monitor" pid=3789 comm="apparmor_parser"
+[   68.441263] audit: type=1400 audit(1554089422.092:257): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.gnome-system-monitor" pid=3788 comm="apparmor_parser"
+- uptime
+ 10:53:49 up 24 min,  1 user,  load average: 0,26, 0,33, 0,35
+- who am i
+- whoami
+huannguyen2008
+- who
+huannguyen2008 :0           2019-04-01 10:29 (:0)
+- id
+uid=1000(huannguyen2008) gid=1000(huannguyen2008) groups=1000(huannguyen2008),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lpadmin),126(sambashare)
+- last
+huannguy :0           :0               Mon Apr  1 10:29   still logged in
+reboot   system boot  4.18.0-16-generi Mon Apr  1 10:29   still running
+
+wtmp begins Mon Apr  1 10:29:16 2019
+- finger
+Login           Name         Tty      Idle  Login Time   Office     Office Phone
+huannguyen2008  HuanNguyen  *:0             Apr  1 10:29 (:0)
+-  w
+ 11:10:17 up 41 min,  1 user,  load average: 0,69, 0,64, 0,53
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+huannguy :0       :0               10:29   ?xdm?   1:05   0.02s /usr/lib/gdm3/g
