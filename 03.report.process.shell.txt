@@ -1,0 +1,32 @@
+// list ...
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ ps
+  PID TTY          TIME CMD
+ 5268 pts/1    00:00:00 bash
+ 5276 pts/1    00:00:00 ps
+
+// gnome-calculator
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ gnome-calculator
+utils.go:684: cannot change mount namespace of snap "gnome-calculator" according to change mount (/snap/gtk-common-themes/818/share/icons/Suru /snap/gnome-calculator/260/data-dir/icons/Suru none bind,ro 0 0): cannot use "/snap/gtk-common-themes/818/share/icons/Suru" as bind-mount source: not a directory
+Fontconfig warning: "/etc/fonts/conf.avail/53-monospace-lcd-filter.conf", line 10: Having multiple values in <test> isn't supported and may not work as expected
+
+// find id ...
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ ps aux| grep "gnome-calculator"
+huanngu+  5290  0.1  0.7 875120 56960 pts/1    Sl+  10:14   0:01 gnome-calculator
+huanngu+  5658  0.0  0.0  23076  1148 pts/2    S+   10:26   0:00 grep --color=auto gnome-calculator
+
+// status ...
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ cat /proc/5290/status
+Name:	gnome-calculato
+Umask:	0022
+State:	S (sleeping)
+
+// manipulate it ...
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ kill -STOP 5290
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ kill -CONT 5290
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ kill -KILL 5290
+
