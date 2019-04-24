@@ -1,0 +1,48 @@
+// list all file...
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ ls
+Desktop    Downloads         filelist  Pictures  snap       Videos
+Documents  examples.desktop  Music     Public    Templates
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ find | grep "list"
+./filelist
+./.local/share/zeitgeist/fts.index/termlist.glass
+./.local/share/zeitgeist/fts.index/postlist.glass
+./.local/share/applications/mimeapps.list
+./.config/google-chrome/Safe Browsing/CertCsdDownloadWhitelist.store
+./.config/google-chrome/Safe Browsing/UrlCsdWhitelist.store
+./.config/google-chrome/Safe Browsing/UrlCsdDownloadWhitelist.store
+./.config/mimeapps.list
+./.mozilla/firefox/c476wecm.default/TRRBlacklist.txt
+./.mozilla/firefox/c476wecm.default/blocklist.xml
+./.mozilla/firefox/c476wecm.default/broadcast-listeners.json
+./.atom/compile-cache/less/df1b7fbc57dbeed23a8f1f8de95b4dfebcc06066/content/07fd21a5554eb7c78cbd96652a2d507b3f3f9e4e/issueish-list-view.json
+./.atom/compile-cache/less/df1b7fbc57dbeed23a8f1f8de95b4dfebcc06066/content/07fd21a5554eb7c78cbd96652a2d507b3f3f9e4e/file-patch-list-view.json
+
+// count ...
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ wc -l /etc/passwd
+41 /etc/passwd
+
+// check ...
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        7904288     1399712     5002768      436044     1501808     5810212
+Swap:       1459904           0     1459904
+
+// find ...
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ grep 'core id' /proc/cpuinfo
+core id		: 0
+core id		: 1
+core id		: 2
+core id		: 3
+core id		: 0
+core id		: 1
+core id		: 2
+core id		: 3
+
+// count ...
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~/Pictures$ find . | grep jpg | wc -l
+0
+
