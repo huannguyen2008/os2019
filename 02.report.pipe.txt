@@ -31,15 +31,9 @@ Swap:       1459904           0     1459904
 
 // find ...
 
-huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ grep 'core id' /proc/cpuinfo
-core id		: 0
-core id		: 1
-core id		: 2
-core id		: 3
-core id		: 0
-core id		: 1
-core id		: 2
-core id		: 3
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$  grep 'core id' /proc/cpuinfo | wc -l
+8
+
 
 // count ...
 
