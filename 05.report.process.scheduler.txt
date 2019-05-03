@@ -1,0 +1,10 @@
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ grep systemd /proc/sched_debug
+ Ssystemd-timesyn   645        21.218312       155   120         0.000000        29.135080         0.000000 0 0 /autogroup-30
+ S systemd-logind   797        23.020611      1150   120         0.000000       103.793957         0.000000 0 0 /autogroup-47
+ Ssystemd-resolve   647        24.229554       229   120         0.000000        81.359261         0.000000 0 0 /autogroup-32
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ grep switch /proc/1/sched
+nr_switches                                  :                18432
+nr_voluntary_switches                        :                18034
+nr_involuntary_switches                      :                  398
+
