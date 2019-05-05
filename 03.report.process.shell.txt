@@ -1,9 +1,16 @@
 // list ...
 
-huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ ps
-  PID TTY          TIME CMD
- 5268 pts/1    00:00:00 bash
- 5276 pts/1    00:00:00 ps
+ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.1  0.1 225476  9404 ?        Ss   Thg 505   0:21 /sbin/init sp
+root         2  0.0  0.0      0     0 ?        S    Thg 505   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        I<   Thg 505   0:00 [rcu_gp]
+root         4  0.0  0.0      0     0 ?        I<   Thg 505   0:00 [rcu_par_gp]
+root         6  0.0  0.0      0     0 ?        I<   Thg 505   0:00 [kworker/0:0H
+root         8  0.0  0.0      0     0 ?        I<   Thg 505   0:00 [mm_percpu_wq
+root         9  0.0  0.0      0     0 ?        S    Thg 505   0:00 [ksoftirqd/0]
+root        10  0.1  0.0      0     0 ?        I    Thg 505   0:18 [rcu_sched]
+
 
 // gnome-calculator
 
