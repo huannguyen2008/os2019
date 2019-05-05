@@ -24,10 +24,10 @@ huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ wc -l /etc/passwd
 
 // check ...
 
-huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ free
-              total        used        free      shared  buff/cache   available
-Mem:        7904288     1399712     5002768      436044     1501808     5810212
-Swap:       1459904           0     1459904
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ free -m | awk '{print($1 $2)}'
+totalused
+Mem:7719
+Swap:1425
 
 // find ...
 
