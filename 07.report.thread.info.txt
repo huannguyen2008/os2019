@@ -1,0 +1,21 @@
+//show number of threads for progress chrome
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ ps aux | grep chrome
+huanngu+  6065  3.3  2.0 844024 165256 tty2    SLl+ 15:06   0:14 /opt/google/chrome/chrome
+huanngu+  6075  0.0  0.7 441632 57016 tty2     S+   15:06   0:00 /opt/google/chrome/chrome --type=zygote
+huanngu+  6076  0.0  0.0  26820  4532 tty2     S+   15:06   0:00 /opt/google/chrome/nacl_helper
+huanngu+  6079  0.0  0.1 441632 14652 tty2     S+   15:06   0:00 /opt/google/chrome/chrome --type=zygote
+huanngu+  6104  3.0  1.1 560500 94056 tty2     Sl+  15:06   0:12 /opt/google/chrome/chrome --type=gpu-process --field-trial-handle=6810466356938189579,13124583818279865469,131072 --gpu-preferences=KAAAAAAAAACAAAAAAQAAAAAAAAAAAGAAAAAAAAEAAAAIAAAAAAAAAAgAAAAAAAAA --service-request-channel-token=2365944696488792084
+
+//ps with NLWP (number of lightweight processes) option
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ ps -o nlwp 6065
+NLWP
+  29
+
+//Count number of subdirectory
+
+huannguyen2008@huannguyen2008-HP-ENVY-Laptop-13-ah0xxx:~$ ls /proc/6065/task | wc -l
+28
+
+
