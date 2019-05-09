@@ -51,7 +51,7 @@ int main(int argc, char const *argv[]) {
         printf("Input 2: type: %c, amount: %d, unit %c \n", input2->type, input2->amount, input2->unit);
         printf("Initial value: first: %d, last: %d\n\n", first, last);
 
-        // produce herer
+        // produce here
         produce(input1);
         printf("Output 1: first: %d, last: %d\n", first, last);
         produce(input2);
